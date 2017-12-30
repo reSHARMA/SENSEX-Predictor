@@ -14,7 +14,7 @@ def sensex():
     headers['Connection'] = 'keep-alive'
     headers['User-Agent'] = \
         'Mozilla/5.0 (X11; Linux x86_64; rv:54.0) Gecko/20100101 Firefox/54.0'
-    with urllib.request.urlopen("https://in.finance.yahoo.com/quote/%5EBSESN/history?p=%5EBSESN") as conn:
+    with urllib.request.urlopen("tradesecret") as conn:
         rr=conn.read()
     a = BeautifulSoup(rr,'html.parser')
     b = a.select(".BdT")
