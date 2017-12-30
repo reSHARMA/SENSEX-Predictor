@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title>BSE SENSEX PREDICTOR</title>
+<style>
+	body{
+		margin:0px;
+        	height:100%;
+	}
+	html {
+	    height: 100%;
+	}
+	.main {
+	    background: url(http://www.tradegoldonline.com/wp-content/uploads/2015/09/straregy-guide-hedging-on-the-forex-market.jpg) no-repeat center center fixed;
+	    background-size: cover;
+	    height: 100%;
+	}
+	.overlay {
+		height: 100%;
+	    position: absolute;
+	    z-index: 1;
+	    background-color: black;
+	    opacity: 0.4;
+	    top: 0px;
+	    width: 100%;	
+	}
+	.head {
+		    position: absolute;
+		    top: 0px;
+		    font-size: 60px;
+		    margin: 2%;
+		    background-color: gold;
+		    z-index: 4;
+		    padding: 2%;	
+	}
+	.desc {
+		    position: absolute;
+    top: 25%;
+    font-size: 35px;
+    color: white;
+    z-index: 2;
+    margin-left: 24%;
+    margin-right: 21%;
+    padding: 0%;
+    font-style: italic;
+    background-image: url(http://linuxcommand.org/images/adventure_powerterm_gnome_terminal_with_tabs.png);
+    /* padding: 4%; */
+    /* font-family: cursive; */
+    padding-top: 6%;
+    padding-left: 1%;
+    padding-bottom: 18%;
+	}
+
+	button {
+		position: absolute;
+		    top: 42%;
+		    z-index: 2;
+		    /* align-content: center; */
+		    /* align-items: center; */
+		    /* align-self: center; */
+		    left: 70%;
+		    font-size: 40px;
+		    border: 0px;
+		    background-color: gold;
+		    padding: 3%;
+		    border-radius: 18%;	
+	}
+	footer{
+		    z-index: 2;
+		    /* width: 100%; */
+		    color: balck;
+		    font-size: 22px;
+	}
+	div#loader {
+	    position: absolute;
+	       top: 30%;
+	    left: 40%;
+	    z-index: 100;
+	    visibility: hidden;
+	}
+</style>
+<body>
+	<div class = "main"> </div>
+	<div class = "overlay"> </div>
+	<div class = "head">BSE SENSEX PREDICTOR </div>
+	<div class = "desc"> For {{date_now}} we predict {{prediction}} <br> For {{date_back}} we predicted {{pre}} and SENSEX opened at {{correct}} </div>
+	<footer><center>Designed and Developed by Reshabh K Sharma</center></footer>
+<script>
+function rotate(){
+	document.getElementsByClassName("overlay")[0].style.zIndex = 50;
+	document.getElementById("loader").style.visibility = "visible";
+}
+function init(){
+	document.getElementById('next').onclick=
+		function(){
+			rotate();
+		};
+}
+window.onload=init;
+</script>
+</body>
+</html>
