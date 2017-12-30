@@ -8,7 +8,7 @@ Predicts the opening price of Bombay Stock Exchange Index (SENSEX)
 3. ### Deployment
 #### Deployed using flask on heroku
 *** 
-### Visit the site [click here](sensexpre.herokuapp.com)
+### Visit the site [click here](http://sensexpre.herokuapp.com)
 
 
 
